@@ -1,0 +1,99 @@
+*,*:after, *:before{
+    margin:0;
+    padding: 0;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  #contenedor_carga{
+    background-color: rgba(255, 255, 255, 0.9);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    -webkit-transition:all 1s ease;
+    -o-transition:all 1s ease;
+    transition: all 1s ease;
+    z-index: 1000;
+  }
+
+  #cargar{
+    border:10px solid #C2C8CB;
+    border-top-color:#B1BABE;
+    border-top-style: groove;
+    height: 50px;
+    width: 50px; 
+    border-radius: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    -webkit-animation:girar 0.7s linear infinite;
+    -o-animation: girar 0.7s linear infinite;
+    animation: girar 0.7s linear infinite;
+  }
+
+  @keyframes girar{
+    from{ transform: rotate(0deg); }
+    to {transform: rotate(360deg);}
+  }
+.error{
+    width: 100%;
+margin-top: 0.25rem;
+font-size: 80%;
+color: #dc3545; 
+  }
+
+  .colo{
+    color: #e63900;
+  }
+
+  .colver{
+   color: #261010; 
+  }
+  
+  .foto{
+    margin-left: 8px;
+  }
+
+  input[type="file"]#mi-archivo {
+ width: 0.1px;
+ height: 0.1px;
+ opacity: 0;
+ overflow: hidden;
+ position: absolute;
+ z-index: -1;
+ }
+
+ label[for="mi-archivo"] {
+box-shadow: 0px 8px 10px -7px #276873;
+  background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+  background-color:#599bb3;
+  border-radius:2px;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:12px;
+  font-weight:bold;
+  padding-bottom: 4px;padding-top: 4px;
+  padding-left: 5px;padding-right: 5px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #3d768a;
+  margin-left: 12px;
+ }
+
+ label[for="mi-archivo"]:hover {
+  background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+  background-color:#408c99;
+} 
+
+label[for="mi-archivo"]:active {
+  position:relative;
+  top:1px;
+}
+
+
